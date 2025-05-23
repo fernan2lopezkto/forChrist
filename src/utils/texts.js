@@ -17,9 +17,14 @@ export const navigationItems = [
 
 // HOME
 export const homeTexts = {
-  title: '',
-  subtitle: ''
-
+  hTitle: '',
+  hSubtitle: '', 
+  hparrafos: [
+'', '', '' 
+	 ], 
+  hBotton: '', 
+s1Title: '', 
+S1
  }
 
 // ABOUT
