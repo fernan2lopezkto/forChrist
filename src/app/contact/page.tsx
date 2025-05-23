@@ -1,4 +1,4 @@
-import { navigationItems, proyectNames } from "@/utils/texts";
+import { proyectNames } from "@/utils/texts";
 
 export default function Contact() {
   return (

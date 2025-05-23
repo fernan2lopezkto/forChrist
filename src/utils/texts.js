@@ -17,6 +17,8 @@ export const navigationItems = [
 
 // HOME
 export const homeTexts = {
+  title: '',
+  subtitle: ''
 
  }
 

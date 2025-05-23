@@ -1,4 +1,4 @@
-import { navigationItems, proyectNames } from "@/utils/texts";
+import { proyectNames } from "@/utils/texts";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
       >
         <div className="hero-overlay"></div>
         <div className="hero-content text-neutral-content text-center">
-          <div className="max-w-md">
+          <div className="max-w-xl">
             <h1 className="mb-5 text-5xl font-bold">{proyectNames.long}</h1>
             <p className="mb-5">
               Un lugar de ayuda para los que recién comienzan en su llamado a
