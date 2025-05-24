@@ -32,6 +32,16 @@ export const homeTexts = {
     "Nuestros tutoriales están pensados para músicos que recién comienzan o desean aprender de forma sencilla.",
     " Encontrarás guías paso a paso para diferentes instrumentos, enfocándonos en canciones cristianas de gran bendición. Queremos que la interpretación sea fácil y accesible, permitiéndote alabar y ministrar la presencia de Dios con tu instrumento. ¡No importa tu nivel, hay algo para ti!",
   ],
+  evanTitle: 'Evangelismo', 
+  evanSubtitle: 'Material para Alcanzar a Otros', 
+  evanParrafos: ['El llamado a compartir las buenas nuevas es para todos. En esta sección, encontrarás recursos y herramientas prácticas para llevar el mensaje de Jesús a tu entorno.', 
+                 'Aquí te equipamos con ideas, reflexiones y materiales para que puedas iniciar conversaciones, compartir tu testimonio y presentar el evangelio de una manera clara y efectiva. ¡Sé un instrumento en las manos de Dios para alcanzar almas para Cristo!'],
+
+  creceTitle:'Cresimiento', 
+  creceSubtitle:'Fortalece Tu Relación con Dios'
+  creceParrafos:[
+'Aquí hallarás material para nutrir tu espíritu, entender más la Palabra, desarrollar hábitos espirituales y encontrar respuestas a tus inquietudes. Desde estudios bíblicos hasta reflexiones devocionales, nuestro objetivo es acompañarte en tu desarrollo espiritual para que crezcas en gracia y conocimiento de nuestro Señor.'
+ ] 
 };
 
 // ABOUT
