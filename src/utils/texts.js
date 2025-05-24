@@ -7,7 +7,7 @@ export const navigationItems = [
     submenu: [
       { label: "Tutoriales", href: "/tutorials" },
       { label: "Material Evangelístico", href: "/evangelism" },
-      { label: "Contenido Edificante", href: "/edificante"}
+      { label: "Contenido Edificante", href: "/edificante" },
     ],
   },
   { label: "Acerca de", href: "/about" },
@@ -17,57 +17,52 @@ export const navigationItems = [
 
 // HOME
 export const homeTexts = {
-  hTitle: '',
-  hSubtitle: '', 
+  hTitle: "¡Bienvenidos a",
+  hSubtitle: "4C: For Christ!",
   hparrafos: [
-'', '', '' 
-	 ], 
-  hBotton: '', 
-s1Title: '', 
-S1
- }
+    "Lo que inició como un proyecto musical en YouTube, hoy se retoma con una visión expandida. Mi deseo es que 4C: For Christ sea un punto de encuentro y ayuda para que más personas puedan crecer en su relación con Dios y llevar Su mensaje, todo para Su gloria. ¡Únete a nuestra comunidad!",
+    // "Tu espacio para crecer en la fe, inspirarte en la música y ser equipado para alcanzar a otros. En 4C, todo lo que hacemos es Para Cristo.",
+    "Aquí encontrarás recursos prácticos y sencillos para tu camino espiritual, desde aprender a tocar esas canciones que tocan ei corazon de Dios, hasta herramientas para compartir el mensaje de Cristo.",
+    "Explora nuestras secciones y descubre cómo podemos acompañarte en el propósito de Dios para tu vida.",
+  ],
+  hBotton: "Descubrir",
+  musicosTitle: "Tutoriales",
+  musicosSubtitle: "De Musica, Sencillos",
+  musicosDescription: [
+    "Nuestros tutoriales están pensados para músicos que recién comienzan o desean aprender de forma sencilla.",
+    " Encontrarás guías paso a paso para diferentes instrumentos, enfocándonos en canciones cristianas de gran bendición. Queremos que la interpretación sea fácil y accesible, permitiéndote alabar y ministrar la presencia de Dios con tu instrumento. ¡No importa tu nivel, hay algo para ti!",
+  ],
+};
 
 // ABOUT
 export const aboutTexts = {
-preTitle: "Quienes somos?", 
-title : "For Christ", 
-parrafos : [
-	"Lo que comenzó hace unos años como un proyecto de enseñanza musical, hoy se ha expandido en una visión mucho más grande: que todo sea Para Cristo. En 4C, entendemos que cada aspecto de nuestras vidas, talentos y recursos, provienen de Él y son para Él.", 
-  "Nuestra misión es ser una fuente de recursos para cada etapa de tu camino de fe. Ya sea que estés dando tus primeros pasos o sientas el llamado a alcanzar a otros, aquí encontrarás apoyo y herramientas para crecer. Desde tutoriales musicales simplificados para tocar esas canciones que tanto ministran, hasta material evangelístico y recursos para tu crecimiento personal en la fe, nuestro propósito es equiparte.", 
-  'Inspirados en Romanos 11:36, creemos que "todas las cosas proceden de él, y existen por él y para él. ¡A él sea la gloria por siempre! Amén." Es con esta certeza y la ayuda del Espíritu Santo que retomamos este llamado, con una fe renovada y la convicción de que Dios expandió nuestra visión para impactar no solo a músicos, sino a todo aquel que anhela vivir una vida plena en Cristo y llevar Su mensaje.',
-  'Te invitamos a explorar 4C: For Christ y a ser parte de esta comunidad donde todo lo hacemos para Su gloria.' 
- ] 
-}
+  preTitle: "Quienes somos?",
+  title: "For Christ",
+  parrafos: [
+    "Lo que comenzó hace unos años como un proyecto de enseñanza musical, hoy se ha expandido en una visión mucho más grande: que todo sea Para Cristo. En 4C, entendemos que cada aspecto de nuestras vidas, talentos y recursos, provienen de Él y son para Él.",
+    "Nuestra misión es ser una fuente de recursos para cada etapa de tu camino de fe. Ya sea que estés dando tus primeros pasos o sientas el llamado a alcanzar a otros, aquí encontrarás apoyo y herramientas para crecer. Desde tutoriales musicales simplificados para tocar esas canciones que tanto ministran, hasta material evangelístico y recursos para tu crecimiento personal en la fe, nuestro propósito es equiparte.",
+    'Inspirados en Romanos 11:36, creemos que "todas las cosas proceden de él, y existen por él y para él. ¡A él sea la gloria por siempre! Amén." Es con esta certeza y la ayuda del Espíritu Santo que retomamos este llamado, con una fe renovada y la convicción de que Dios expandió nuestra visión para impactar no solo a músicos, sino a todo aquel que anhela vivir una vida plena en Cristo y llevar Su mensaje.',
+    "Te invitamos a explorar 4C: For Christ y a ser parte de esta comunidad donde todo lo hacemos para Su gloria.",
+  ],
+};
 
 // MATERIAL
-export const materialTexts = {
-
-}
+export const materialTexts = {};
 
 // EVANGELISMO
-export const evangelizmoTexts = {
-
-}
+export const evangelizmoTexts = {};
 
 // TUTORIALES
-export const tutorialesTexts = {
-
-}
+export const tutorialesTexts = {};
 
 // CRECIMIENTO
-export const crecimientoTexts = {
-
-}
+export const crecimientoTexts = {};
 
 // APOYANOS
-export const apoyanosTexts = {
-
-}
+export const apoyanosTexts = {};
 
 // TIENDA
-export const tiendaTexts = {
-
-}
+export const tiendaTexts = {};
 
 // NOMBRE
 export const proyectNames = { long: "4C-ForChrist", short: "4C" };
