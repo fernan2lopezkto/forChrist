@@ -25,15 +25,10 @@ export default function Home() {
         </div>
       </div>
       {/* Musicians Section */}
-      <div className="py-10 lg:py-16"> {/* Added padding top and bottom for the section */}
+      <div id="material" className="py-10 lg:py-16"> {/* Added padding top and bottom for the section */}
         <div className="container mx-auto px-4"> {/* Centering content and adding horizontal padding */}
-          <div className="text-center mb-8 lg:mb-12">
 
-            <div className="max-w-2xl mx-auto"> {/* Limit width of description */}
-
-            </div>
-          </div>
-
+        <h2 className="mb-5 text-3xl font-bold">Material</h2>
 
           {/* Cards Container */}
           <div className="flex flex-wrap justify-center items-stretch gap-6 lg:gap-8">
