@@ -28,17 +28,9 @@ export default function Home() {
       <div className="py-10 lg:py-16"> {/* Added padding top and bottom for the section */}
         <div className="container mx-auto px-4"> {/* Centering content and adding horizontal padding */}
           <div className="text-center mb-8 lg:mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold">
-              {homeTexts.musicosTitle}
-            </h2>
-            {homeTexts.musicosSubtitle && ( /* Conditionally render subtitle if it exists */
-              <h6 className="text-xl mt-2 text-gray-600">{homeTexts.musicosSubtitle}</h6>
-            )}
+
             <div className="max-w-2xl mx-auto"> {/* Limit width of description */}
-              <p className="mt-4 text-lg text-gray-700">
-                {homeTexts.musicosDescription[0]}
-                {homeTexts.musicosDescription[1]}
-              </p>
+
             </div>
           </div>
 
