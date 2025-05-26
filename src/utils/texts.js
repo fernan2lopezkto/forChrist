@@ -26,6 +26,8 @@ export const homeTexts = {
     "Explora nuestras secciones y descubre cómo podemos acompañarte en el propósito de Dios para tu vida.",
   ],
   hBotton: "Descubrir",
+
+  // Cards
   musicosTitle: "Tutoriales",
   musicosSubtitle: "De Musica, Sencillos",
   musicosDescription: [
@@ -38,9 +40,10 @@ export const homeTexts = {
                  'Aquí te equipamos con ideas, reflexiones y materiales para que puedas iniciar conversaciones, compartir tu testimonio y presentar el evangelio de una manera clara y efectiva. ¡Sé un instrumento en las manos de Dios para alcanzar almas para Cristo!'],
 
   creceTitle:'Cresimiento', 
-  creceSubtitle:'Fortalece Tu Relación con Dios', 
+  creceSubtitle:'Fortalece Tu Relación con Dios',
   creceParrafos:[
-'Aquí hallarás material para nutrir tu espíritu, entender más la Palabra, desarrollar hábitos espirituales y encontrar respuestas a tus inquietudes. Desde estudios bíblicos hasta reflexiones devocionales, nuestro objetivo es acompañarte en tu desarrollo espiritual para que crezcas en gracia y conocimiento de nuestro Señor.'
+    "Aquí hallarás material para nutrir tu espíritu, entender más la Palabra, desarrollar hábitos espirituales y encontrar respuestas a tus inquietudes", 
+    ". Desde estudios bíblicos hasta reflexiones devocionales, nuestro objetivo es acompañarte en tu desarrollo espiritual para que crezcas en gracia y conocimiento de nuestro Señor."
  ] 
 };
 
@@ -82,3 +85,4 @@ export const footerText =
   "© 2025 Mi Plataforma Cristiana. Todos los derechos reservados.";
 
 export const Text = "";
+
