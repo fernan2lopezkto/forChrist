@@ -25,23 +25,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Musicians Section */}
-      <div className="py-10 lg:py-16"> {/* Added padding top and bottom for the section */}
-        <div className="container mx-auto px-4"> {/* Centering content and adding horizontal padding */}
-          <div className="text-center mb-8 lg:mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold">
-              {homeTexts.musicosTitle}
-            </h2>
-            {homeTexts.musicosSubtitle && ( /* Conditionally render subtitle if it exists */
-              <h6 className="text-xl mt-2 text-gray-600">{homeTexts.musicosSubtitle}</h6>
-            )}
-            <div className="max-w-2xl mx-auto"> {/* Limit width of description */}
-              <p className="mt-4 text-lg text-gray-700">
-                {homeTexts.musicosDescription[0]}
-                {homeTexts.musicosDescription[1]}
-              </p>
-            </div>
-          </div>
+
 
           {/* Cards Container */}
           <div className="flex flex-wrap justify-center items-stretch gap-6 lg:gap-8">
@@ -67,36 +51,10 @@ export default function Home() {
             </div>
 
             {/* Card 2 */}
-            <div className="card bg-base-100 image-full w-full sm:w-96 shadow-xl transform hover:scale-105 transition-transform duration-300">
-              <figure>
-                <img
-                  src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" // Consider different images for different cards
-                  alt="Card Image 2" />
-              </figure>
-              <div className="card-body">
-                <h2 className="card-title">Herramientas Útiles</h2> {/* Example: More specific title */}
-                <p>Descubre herramientas y software que te ayudarán en tu camino musical y ministerial.</p>
-                <div className="card-actions justify-end mt-auto">
-                  <button className="btn btn-primary">Explorar</button>
-                </div>
-              </div>
-            </div>
+
 
             {/* Card 3 */}
-            <div className="card bg-base-100 image-full w-full sm:w-96 shadow-xl transform hover:scale-105 transition-transform duration-300">
-              <figure>
-                <img
-                  src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" // Consider different images for different cards
-                  alt="Card Image 3" />
-              </figure>
-              <div className="card-body">
-                <h2 className="card-title">Comunidad</h2> {/* Example: More specific title */}
-                <p>Conéctate con otros músicos, comparte experiencias y crece junto a nuestra comunidad.</p>
-                <div className="card-actions justify-end mt-auto">
-                  <button className="btn btn-primary">Unirse</button>
-                </div>
-              </div>
-            </div>
+
           </div>
         </div>
       </div>
