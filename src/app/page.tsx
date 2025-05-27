@@ -1,5 +1,5 @@
 import { homeTexts } from "@/utils/texts";
-
+import Link from 'next/link'; 
 export default function Home() {
   return (
     <div>
@@ -20,7 +20,10 @@ export default function Home() {
                 {parrafo}
               </p>
             ))}
-            <button className="btn btn-primary">{homeTexts.hBotton}</button>
+                        {/* Botón del Hero con Link a /tutorials */}
+            <Link href="/tutoriales" className="btn btn-primary">
+              {homeTexts.hBotton}
+            </Link>
           </div>
         </div>
       </div>
