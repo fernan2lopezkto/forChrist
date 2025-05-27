@@ -1,5 +1,9 @@
 import { homeTexts } from "@/utils/texts";
-import Link from 'next/link'; 
+
+import Link from "next/link";
+
+import MaterialCards from "@/components/MaterialCards";
+
 export default function Home() {
   return (
     <div>
@@ -10,7 +14,8 @@ export default function Home() {
           backgroundImage: "url('/forChristWP3.png')",
         }}
       >
-        <div className="hero-overlay bg-opacity-60"></div> {/* Added bg-opacity-60 for better readability if needed */}
+        <div className="hero-overlay bg-opacity-60"></div>{" "}
+        {/* Added bg-opacity-60 for better readability if needed */}
         <div className="hero-content text-neutral-content text-center">
           <div className="max-w-xl">
             <h2 className="mb-5 text-3xl font-bold">{homeTexts.hTitle}</h2>
@@ -20,82 +25,14 @@ export default function Home() {
                 {parrafo}
               </p>
             ))}
-                        {/* Botón del Hero con Link a /tutorials */}
+            {/* Botón del Hero con Link a /tutorials */}
             <Link href="/tutoriales" className="btn btn-primary">
               {homeTexts.hBotton}
             </Link>
           </div>
         </div>
       </div>
-      {/* Musicians Section */}
-      <div id="material" className="py-10 lg:py-16"> {/* Added padding top and bottom for the section */}
-        <div className="container mx-auto px-4"> {/* Centering content and adding horizontal padding */}
-
-        <h2 className="mb-5 text-3xl font-bold text-center">Material</h2>
-
-          {/* Cards Container */}
-          <div className="flex flex-wrap justify-center items-stretch gap-6 lg:gap-8">
-            {/* Card 1 */}
-            <div className="card bg-base-100 image-full w-full sm:w-96 shadow-xl transform hover:scale-105 transition-transform duration-300"> {/* Added hover effect & responsive width */}
-              <figure>
-                <img
-                  src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                  alt={homeTexts.musicosTitle} />
-              </figure>
-              <div className="card-body">
-                <h2 className="card-title">{homeTexts.musicosTitle}</h2>
-                <p>
-                  {homeTexts.musicosDescription[0]}
-                  {homeTexts.musicosDescription[1]}
-                </p>
-                <div className="card-actions justify-end mt-auto"> {/* Added mt-auto to push button to bottom */}
-                  <button className="btn btn-primary">Tutoriales</button>
-                </div>
-              </div>
-            </div>
-
-            {/* Card 2 */}
-                        <div className="card bg-base-100 image-full w-full sm:w-96 shadow-xl transform hover:scale-105 transition-transform duration-300"> {/* Added hover effect & responsive width */}
-              <figure>
-                <img
-                  src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                  alt={homeTexts.evanTitle} />
-              </figure>
-              <div className="card-body">
-                <h2 className="card-title">{homeTexts.evanTitle}</h2>
-                <p>
-                  {homeTexts.evanDescription[0]}
-                  {homeTexts.evanDescription[1]}
-                </p>
-                <div className="card-actions justify-end mt-auto"> {/* Added mt-auto to push button to bottom */}
-                  <button className="btn btn-primary">Tutoriales</button>
-                </div>
-              </div>
-            </div>
-
-
-            {/* Card 3 */}
-                            <div className="card bg-base-100 image-full w-full sm:w-96 shadow-xl transform hover:scale-105 transition-transform duration-300"> {/* Added hover effect & responsive width */}
-              <figure>
-                <img
-                  src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                  alt={homeTexts.creceTitle} />
-              </figure>
-              <div className="card-body">
-                <h2 className="card-title">{homeTexts.creceTitle}</h2>
-                <p>
-                  {homeTexts.creceDescription[0]}
-                  {homeTexts.creceDescription[1]}
-                </p>
-                <div className="card-actions justify-end mt-auto"> {/* Added mt-auto to push button to bottom */}
-                  <button className="btn btn-primary">Tutoriales</button>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
+      <MaterialCards />
     </div>
   );
 }

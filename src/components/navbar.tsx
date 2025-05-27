@@ -1,5 +1,5 @@
 import { navigationItems, proyectNames } from "@/utils/texts";
-import Link from 'next/link';
+import Link from "next/link";
 
 export default function Navbar() {
   return (
@@ -30,7 +30,6 @@ export default function Navbar() {
             {navigationItems.map((item) =>
               item.submenu ? (
                 <li key={item.label}>
-                  
                   <details>
                     <summary>{item.label}</summary>
                     <ul className="p-2">
@@ -79,7 +78,9 @@ export default function Navbar() {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn" href="/material">Material</a> {/* Cambié el botón final a "Apóyanos" */}
+        <a className="btn" href="/material">
+          Material
+        </a>
       </div>
     </div>
   );
