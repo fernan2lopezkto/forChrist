@@ -15,7 +15,7 @@ export default function MaterialCards() {
             <div className="card bg-base-100 image-full w-full sm:w-96 shadow-xl transform hover:scale-105 transition-transform duration-300">
               <figure>
                 <img
-                  src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                  src='/forChristWP3.png'
                   alt={homeTexts.musicosTitle}
                 />
               </figure>
@@ -37,7 +37,7 @@ export default function MaterialCards() {
             <div className="card bg-base-100 image-full w-full sm:w-96 shadow-xl transform hover:scale-105 transition-transform duration-300">
               <figure>
                 <img
-                  src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                  src='/evangelizmo.png'
                   alt={homeTexts.evanTitle}
                 />
               </figure>
@@ -59,7 +59,7 @@ export default function MaterialCards() {
             <div className="card bg-base-100 image-full w-full sm:w-96 shadow-xl transform hover:scale-105 transition-transform duration-300">
               <figure>
                 <img
-                  src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                  src="/crecimiento.png"
                   alt={homeTexts.creceTitle}
                 />
               </figure>
