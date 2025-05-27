@@ -28,7 +28,7 @@ export default function Home() {
       <div id="material" className="py-10 lg:py-16"> {/* Added padding top and bottom for the section */}
         <div className="container mx-auto px-4"> {/* Centering content and adding horizontal padding */}
 
-        <h2 className="mb-5 text-3xl font-bold">Material</h2>
+        <h2 className="mb-5 text-3xl font-bold text-center">Material</h2>
 
           {/* Cards Container */}
           <div className="flex flex-wrap justify-center items-stretch gap-6 lg:gap-8">
@@ -37,11 +37,9 @@ export default function Home() {
               <figure>
                 <img
                   src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                  alt="Shoes" />
+                  alt={homeTexts.musicosTitle} />
               </figure>
               <div className="card-body">
-                {/* It's generally better for card titles to be more specific if they are under a section title */}
-                {/* For now, keeping as per original, but consider changing this homeTexts.musicosTitle */}
                 <h2 className="card-title">{homeTexts.musicosTitle}</h2>
                 <p>
                   {homeTexts.musicosDescription[0]}
@@ -54,9 +52,43 @@ export default function Home() {
             </div>
 
             {/* Card 2 */}
+                        <div className="card bg-base-100 image-full w-full sm:w-96 shadow-xl transform hover:scale-105 transition-transform duration-300"> {/* Added hover effect & responsive width */}
+              <figure>
+                <img
+                  src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                  alt={homeTexts.evanTitle} />
+              </figure>
+              <div className="card-body">
+                <h2 className="card-title">{homeTexts.evanTitle}</h2>
+                <p>
+                  {homeTexts.evanDescription[0]}
+                  {homeTexts.evanDescription[1]}
+                </p>
+                <div className="card-actions justify-end mt-auto"> {/* Added mt-auto to push button to bottom */}
+                  <button className="btn btn-primary">Tutoriales</button>
+                </div>
+              </div>
+            </div>
 
 
             {/* Card 3 */}
+                            <div className="card bg-base-100 image-full w-full sm:w-96 shadow-xl transform hover:scale-105 transition-transform duration-300"> {/* Added hover effect & responsive width */}
+              <figure>
+                <img
+                  src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                  alt={homeTexts.creceTitle} />
+              </figure>
+              <div className="card-body">
+                <h2 className="card-title">{homeTexts.creceTitle}</h2>
+                <p>
+                  {homeTexts.creceDescription[0]}
+                  {homeTexts.creceDescription[1]}
+                </p>
+                <div className="card-actions justify-end mt-auto"> {/* Added mt-auto to push button to bottom */}
+                  <button className="btn btn-primary">Tutoriales</button>
+                </div>
+              </div>
+            </div>
 
           </div>
         </div>
