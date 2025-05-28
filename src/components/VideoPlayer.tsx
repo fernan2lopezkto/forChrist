@@ -1,35 +1,56 @@
-"use client"
-import ReactPlayer from "react-player/youtube";
+// src/components/VideoPlayer.tsx
 
-// Define the props interface for better type safety with TypeScript
+import React, { useEffect, useState } from 'react';
+// Ya NO importamos ReactPlayer directamente aquí.
+// import ReactPlayer from "react-player/youtube"; // ¡Comenta o elimina esta línea!
+
 interface VideoPlayerProps {
-  videoUrl: string; // The URL of the video to play
-  title?: string;   // Optional title for accessibility or display
+  videoUrl: string; // La URL del video a reproducir
+  title?: string;   // Título opcional para accesibilidad o visualización
 }
 
 const VideoPlayer: React.FC<VideoPlayerProps> = ({ videoUrl, title }) => {
+  // Estado para verificar si estamos en el navegador (hay ventana)
+  const [hasWindow, setHasWindow] = useState(false);
+  // Estado para guardar el componente ReactPlayer una vez que se cargue dinámicamente
+  const [ClientSideReactPlayer, setClientSideReactPlayer] = useState<any>(null);
+
+  // useEffect se ejecuta SOLAMENTE en el lado del cliente (en el navegador)
+  useEffect(() => {
+    if (typeof window !== 'undefined') { // Verificamos que 'window' exista
+      setHasWindow(true);
+      // Importamos dinámicamente ReactPlayer cuando estamos seguros de estar en el navegador
+      import('react-player/youtube').then((mod) => {
+        setClientSideReactPlayer(() => mod.default); // Guardamos el componente importado
+      });
+    }
+  }, []); // El array vacío asegura que este efecto se ejecute solo una vez al montar
+
+  // Si no estamos en el navegador o ReactPlayer aún no se ha cargado, mostramos un placeholder
+  if (!hasWindow || !ClientSideReactPlayer) {
+    return (
+      <div className="relative pt-[56.25%] overflow-hidden bg-black rounded-lg shadow-xl flex items-center justify-center">
+        {/* Puedes poner un spinner de carga o un mensaje aquí */}
+        <p className="text-white">Cargando video...</p>
+      </div>
+    );
+  }
+
+  // Si ya estamos en el navegador y ReactPlayer está cargado, renderizamos el componente real
   return (
-    // This div creates a responsive aspect ratio container
-    // The trick is to use padding-top as a percentage of the width.
-    // For 16:9 aspect ratio, it's (9 / 16) * 100% = 56.25%
     <div className="relative pt-[56.25%] overflow-hidden bg-black rounded-lg shadow-xl">
-      <ReactPlayer
+      <ClientSideReactPlayer // Usamos el componente importado dinámicamente
         url={videoUrl}
         controls={true}
-        volume={0.5} // Default volume
-        // The player takes up 100% of the parent's width and height
-        // This makes it fill the aspect ratio container
+        volume={0.5}
         width="100%"
         height="100%"
-        // Position the player absolutely to fill the container
         className="absolute top-0 left-0"
-        aria-label={title || "Video Player"} // Add an aria-label for accessibility
+        aria-label={title || "Reproductor de Video"}
         config={{
           youtube: {
             playerVars: {
-              // You can add more YouTube player variables here if needed
-              // For example, to hide related videos at the end:
-              // rel: 0,
+              // Tus variables de reproductor de YouTube aquí
             },
           },
         }}
