@@ -6,6 +6,7 @@ import VideoPlayer from "@/components/VideoPlayer"; // Adjust the path as needed
 export default function VenEspirituSanto() {
   // REPLACE with your actual YouTube video URL
   const youtubeVideoUrl = "https://youtu.be/gV7RkJtBOjU?si=zXjqhDBQ7FLIKT59"; // Example URL, change this!
+  const guitarraVideoUrl = ""
 
   const letra = `INTRO:      MIm      RE     DO     SI 7
     8 TIEMPOS CADA NOTA
@@ -53,10 +54,14 @@ Ven, ven, ven llena este lugar`;
               videoUrl={youtubeVideoUrl}
               title="Tutorial de Ven Espíritu Santo"
             />
+            <VideoPlayer
+              videoUrl={guitarraVideoUrl}
+              title="Tutorial de Ven Espíritu Santo en guitarra"
+            />
           </div>
           {/* Lyrics (right on desktop, bottom on mobile) */}
           <div className="md:w-1/2 text-left">
-            <pre className="whitespace-pre-wrap font-mono text-gray-300 leading-relaxed">
+            <pre className="whitespace-pre-wrap font-mono text-xs text-gray-300 leading-relaxed">
               {letra}
             </pre>
           </div>
