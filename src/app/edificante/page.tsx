@@ -8,15 +8,14 @@ const heroContent = {
 };
 
 export default function Edificante() {
-    return (
-      <div>
-                <GeneralHero
-                  Title={heroContent.Title}
-                  Subtitle={heroContent.Subtitle}
-                  parrafos={heroContent.parrafos}
-                  Botton={heroContent.Botton}
-                />
-      </div>
-    );
-  }
-  
+  return (
+    <div>
+      <GeneralHero
+        Title={heroContent.Title}
+        Subtitle={heroContent.Subtitle}
+        parrafos={heroContent.parrafos}
+        Botton={heroContent.Botton}
+      />
+    </div>
+  );
+}
