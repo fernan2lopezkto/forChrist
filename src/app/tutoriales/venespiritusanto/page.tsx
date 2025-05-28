@@ -56,7 +56,7 @@ Ven, ven, ven llena este lugar`;
           </div>
           {/* Lyrics (right on desktop, bottom on mobile) */}
           <div className="md:w-1/2 text-left">
-            <pre className="whitespace-pre-wrap font-mono text-gray-300 text-lg leading-relaxed">
+            <pre className="whitespace-pre-wrap font-mono text-gray-300 leading-relaxed">
               {letra}
             </pre>
           </div>
