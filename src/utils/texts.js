@@ -20,10 +20,10 @@ export const homeTexts = {
   hTitle: "¡Bienvenidos a",
   hSubtitle: "4C: For Christ!",
   hparrafos: [
-    "Lo que inició como un proyecto musical en YouTube, hoy se retoma con una visión expandida. Mi deseo es que 4C: For Christ sea un punto de encuentro y ayuda para que más personas puedan crecer en su relación con Dios y llevar Su mensaje, todo para Su gloria. ¡Únete a nuestra comunidad!",
+    "Lo que inició como un proyecto musical en YouTube, hoy se retoma con una visión expandida. Mi deseo es que 4C: For Christ sea un punto de encuentro y ayuda para que más personas puedan conocer mas de Dios y llevar Su mensaje, todo sea para Su gloria. ¡Únete a nuestra comunidad!",
     // "Tu espacio para crecer en la fe, inspirarte en la música y ser equipado para alcanzar a otros. En 4C, todo lo que hacemos es Para Cristo.",
-    "Aquí encontrarás recursos prácticos y sencillos para tu camino espiritual, desde aprender a tocar esas canciones que tocan ei corazon de Dios, hasta herramientas para compartir el mensaje de Cristo.",
-    "Explora nuestras secciones y descubre cómo podemos acompañarte en el propósito de Dios para tu vida.",
+    "Aquí encontrarás recursos prácticos y sencillos, desde aprender a tocar esas canciones que nos ministran tanto de la precencia de Dios, hasta herramientas para compartir el mensaje de Cristo.",
+    " ",
   ],
   hBotton: "Descubrir",
 
@@ -41,11 +41,11 @@ export const homeTexts = {
     "Aquí te equipamos con ideas, reflexiones y materiales para que puedas iniciar conversaciones, compartir tu testimonio y presentar el evangelio de una manera clara y efectiva. ¡Sé un instrumento en las manos de Dios para alcanzar almas para Cristo!",
   ],
 
-  creceTitle: "Cresimiento",
-  creceSubtitle: "Fortalece Tu Relación con Dios",
+  creceTitle: "Reflecciones",
+  creceSubtitle: "Conociendo mas de Dios",
   creceDescription: [
-    "Aquí hallarás material para nutrir tu espíritu, entender más la Palabra, desarrollar hábitos espirituales y encontrar respuestas a tus inquietudes",
-    ". Desde estudios bíblicos hasta reflexiones devocionales, nuestro objetivo es acompañarte en tu desarrollo espiritual para que crezcas en gracia y conocimiento de nuestro Señor.",
+    "Aquí encontraras refleccines biblicas y formas de aprender mas de la palabra de Dios",
+    ". Desde estudios bíblicos hasta reflexiones devocionales, nuestro objetivo es que crezcas en el conocimiento de nuestro Señor Jesús.",
   ],
 };
 
