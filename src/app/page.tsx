@@ -3,6 +3,7 @@ import { homeTexts } from "@/utils/texts";
 import Link from "next/link";
 
 import MaterialCards from "@/components/MaterialCards";
+import QA from "@/components/QA";
 
 export default function Home() {
   return (
@@ -32,6 +33,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <QA />
       <MaterialCards />
     </div>
   );

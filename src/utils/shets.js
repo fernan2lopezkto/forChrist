@@ -1,0 +1,1 @@
+export  const qa = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR4YUxkZgKbMt7wO21D5vzKBqRnptQTz7cD11kfYJ5ADuf1eSD-hMTKFordZrUhvLy3Mxxa63m7zVdD/pub?gid=0&single=true&output=csv";
