@@ -1,5 +1,6 @@
 "use client"; // This directive is necessary for client-side components like ReactPlayer
 
+import LibretaDeNotas from "@/components/LibretaDeNotas";
 import MaterialCards from "@/components/MaterialCards";
 import VideoPlayer from "@/components/VideoPlayer";
 export default function VenEspirituSanto() {
@@ -133,6 +134,9 @@ Ven, ven, ven llena este lugar`
         </pre>
         <h3>{tutorial.versoRef}</h3>
       </div>
+
+      {/* Libreta de progresiones */}
+      <LibretaDeNotas />
 
       {/* Material Cards component */}
       <MaterialCards />
